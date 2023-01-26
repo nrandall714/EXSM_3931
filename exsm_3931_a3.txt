@@ -1,0 +1,48 @@
+Pseudocode - Hungry Customer
+
+Money = 5.00
+Snacks = (regular_chips = 2.00, dill_pickle_chips = 2.00, gummy_bears = 3.00, swedish_fish = 3.00)
+Inventory = (regular_chips = 5, dill_pickle_chips = 3, gummy_bears = 2, swedish_fish = 4)
+Change = 0
+Snack_Choice = ""
+
+Look at choices of snack
+Check price of Snack you want
+insert Money
+while money is less than cost {
+    insert more Money
+}
+make Snack_Choice
+if Snack_Choice is not available, or Inventory = 0 {
+    error message asking Customer to pick a different option
+}
+Coil turns to dispense Snack_Choice
+Customer takes Snack_Choice
+if money inserted is more than cost {
+    return change to customer
+}
+Update Inventory
+
+
+Pseudocode - Machine Owner
+
+Inventory = (regular_chips = 1, dill_pickle_chips = 2, gummy_bears = 1, swedish_fish = 0)
+Change Maker = (Toonie = 10, Loonie = 2, quarter = 20)
+Earned Money = 0
+
+Use key to unlock Machine
+Open door to access snacks and money
+Check Inventory of snacks
+If snack item inventory is <5 {
+    replenish item
+}
+Collect Earned Money
+Check Change Maker
+If change < 15 coins {
+    Replenish change maker using earned money
+    if change is still < 15 {
+        take money from pocket
+    }
+}
+Close door
+Use key to lock Machine
